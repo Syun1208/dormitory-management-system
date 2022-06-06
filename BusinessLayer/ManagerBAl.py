@@ -7,12 +7,13 @@ import matplotlib.pyplot as plt
 
 def insertionSort(arr):
     for i in range(1, len(arr)):
-        key = arr[i][12]
+        key = int(arr[i][12])
         j = i - 1
         while j >= 0 and key < int(arr[j][12]):
             arr[j + 1][12] = int(arr[j][12])
             j -= 1
         arr[j + 1][12] = key
+    return arr
 
 
 def selection_sort(L):
